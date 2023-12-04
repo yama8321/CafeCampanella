@@ -1,0 +1,1171 @@
+@charset "UTF-8";
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type=number] {
+  -moz-appearance: textfield;
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.loading_bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  transition: all 1s linear;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFD600;
+  z-index: 100000000;
+}
+
+.loadmino {
+  height: 100vh;
+}
+
+.active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#load {
+  position: absolute;
+  width: 600px;
+  height: 36px;
+  left: 50%;
+  top: 40%;
+  margin-left: -300px;
+  overflow: visible;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+#load div {
+  position: absolute;
+  width: 20px;
+  height: 36px;
+  opacity: 0;
+  font-size: 3rem;
+  font-family: Helvetica, Arial, sans-serif;
+  animation: move 2s linear infinite;
+  -o-animation: move 2s linear infinite;
+  -moz-animation: move 2s linear infinite;
+  -webkit-animation: move 2s linear infinite;
+  transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  color: #BF212A;
+}
+
+#load div:nth-child(2) {
+  animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+
+#load div:nth-child(3) {
+  animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+#load div:nth-child(4) {
+  animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+
+#load div:nth-child(5) {
+  animation-delay: 0.8s;
+  -o-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+
+#load div:nth-child(6) {
+  animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+#load div:nth-child(7) {
+  animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  35% {
+    left: 41%;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  65% {
+    left: 59%;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+}
+/* JS_drawer v1.1.0 ,2023 */
+/* create by syo motoyama*/
+/* support by studio99.99(https://studio9999.com/) and CRAFT STUDIO SORA(https://cssora.net/) */
+:root {
+  --drawerColor:rgb(191, 33, 42); /* ドロワーボタンとMENUの色。藍鉄色 */
+  --barColor:#eaf4fc; /* ドロワーボタンのアニメーションするバーの色。月白色 */
+  --menuColor:linear-gradient( 109.6deg, rgba(191,33,42,1) 11.2%, rgba(237,246,250,1) 100.2% ); /* メニューの背景色。グラデーションなのでbackground-imageで指定 */
+}
+
+.toggleButton {
+  display: none;
+}
+
+#drawerMenu ul {
+  position: fixed;
+  background-color: #BF212A;
+  color: #ffffff;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 10000;
+  transition: top 1s ease-out;
+}
+
+#drawerMenu li {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+#drawerMenu a {
+  display: block;
+  padding: 1rem; /* マウスが反応する範囲を少し広げている*/
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+/* アンカーリンクにマウスが乗ると、他のアンカーリンクが少し薄くなる指定 */
+#drawerMenu ul:has(a:hover) a:not(:hover) {
+  opacity: 0.3;
+}
+
+@media (width <= 800px) { /* メディアクエリの値はお好みで */
+  .toggleButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: block; /* display:none;を解除するために入れている */
+    background: var(--drawerColor);
+    border-radius: 5px;
+    z-index: 10001;
+  }
+  .toggleButton::after {
+    content: "MENU";
+    position: absolute;
+    bottom: -1rem;
+    font-size: 0.725rem;
+    font-weight: bold;
+    color: var(--drawerColor);
+  }
+  .toggleButton span {
+    width: 60%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: 20%;
+    background-color: var(--barColor);
+    border-radius: 5px;
+    transition: all 0.2s linear;
+  }
+  .toggleButton span:nth-of-type(1) {
+    top: 10px;
+    transform: rotate(0);
+  }
+  .toggleButton span:nth-of-type(2) {
+    top: 18px;
+    transform: scale(1);
+  }
+  .toggleButton span:nth-of-type(3) {
+    bottom: 10px;
+    transform: rotate(0);
+  }
+  .close span:nth-of-type(1) {
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+  .close span:nth-of-type(2) {
+    transform: scale(0);
+  }
+  .close span:nth-of-type(3) {
+    bottom: 18px;
+    transform: rotate(45deg);
+  }
+  #drawerMenu {
+    position: fixed;
+    top: 0;
+    right: -240px;
+    transition: all 0.3s linear;
+    z-index: 100;
+  }
+  #drawerMenu.open {
+    right: 0;
+  }
+  #drawerMenu ul {
+    position: static;
+    display: block;
+    width: 200px;
+    height: 100%;
+    padding: 50px 20px 20px 20px;
+    background-image: var(--menuColor);
+    overflow: hidden;
+    text-align: center;
+    list-style-type: none;
+    border-radius: 0 0 0 10px;
+    z-index: 100;
+  }
+  #drawerMenu li {
+    width: 100%;
+  }
+} /* width <= 800px */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../img/haikei.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+#topBBB {
+  display: none;
+  background-image: url(../img/ono.gif);
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes slid {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes logo {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+header .headerback {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+header .headerback .headerback01 {
+  max-width: 2000px;
+  width: 2000px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: slid 10s infinite alternate ease-in-out;
+}
+header .headerback .headerback_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (width < 500px) {
+  header .headerback .headerback_logo {
+    width: 80%;
+  }
+}
+header .headerback .headerback_logo .headerLogo {
+  animation: logo 10s infinite alternate ease-in-out;
+}
+@keyframes logo {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+#top img {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+@media (width < 800px) {
+  #top img {
+    content: url(../img/bghead2.jpg);
+    width: 100%;
+    max-height: 844px;
+  }
+}
+@media (width < 320px) {
+  #top img {
+    content: url(../img/bghead3.jpg);
+    width: 100%;
+    max-height: 100vh;
+  }
+}
+
+.fadeinn {
+  animation-name: fadein01;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein01 {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.sec01 {
+  max-width: 1200px;
+  background-image: url(../img/mino3gif.gif);
+  background-size: 350px;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3rem 0;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+@media (width < 800px) {
+  .sec01 {
+    max-width: 100%;
+    flex-direction: column;
+    background-position: bottom right;
+    padding: 1rem;
+  }
+}
+@media (width < 600px) {
+  .sec01 {
+    background-image: none;
+    padding: 0;
+    align-items: center;
+  }
+}
+.sec01 .sec01ono {
+  width: 500px;
+}
+@media (width < 800px) {
+  .sec01 .sec01ono {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+.sec01 .sec01ono img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px 7px rgba(255, 255, 255, 0.7);
+}
+.sec01 .sec01p {
+  background: rgba(255, 255, 255, 0.7);
+  width: 400px;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #BF212A;
+  padding: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+@media (width < 800px) {
+  .sec01 .sec01p {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media (width < 320px) {
+  .sec01 .sec01p {
+    padding: 3px;
+  }
+}
+
+.fadein02 {
+  animation-name: fadein02;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein02 {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fadein03 {
+  animation-name: fadein03;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein03 {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid #FFD600;
+}
+#menu .swiper {
+  max-width: 1200px;
+}
+#menu .swiper .swiper-slide-prev {
+  opacity: 0.7;
+}
+#menu .swiper .swiper-slide-next {
+  opacity: 0.7;
+}
+#menu .swiper .swiper-pagination {
+  margin-bottom: 0;
+}
+#menu .swiper .swiper-button-prev::after {
+  content: "◀";
+  font-size: 2rem;
+  color: #BF212A;
+}
+#menu .swiper .swiper-button-prev {
+  background: #fff;
+  border: 3px solid #BF212A;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  padding-right: 0.2rem;
+}
+#menu .swiper .swiper-button-next::after {
+  content: "▶";
+  font-size: 2rem;
+  color: #BF212A;
+}
+#menu .swiper .swiper-button-next {
+  background: #fff;
+  border: 3px solid #BF212A;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  padding-right: 0.2rem;
+}
+#menu .swiper .menu00 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin: 1rem;
+  color: #BF212A;
+}
+#menu .swiper .menu00 .menuImg img {
+  border-radius: 10%;
+}
+#menu .swiper .menu00 h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 7px #FFD600;
+}
+#menu .swiper .menu00 p {
+  max-width: 350px;
+  line-height: 1.5rem;
+}
+
+#gallery {
+  max-width: 1200px;
+  margin: 1rem auto;
+  overflow: hidden;
+  height: 40vw;
+}
+#gallery .swiper02 .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: 50% 100%;
+     object-position: 50% 100%;
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+#staff {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (width < 800px) {
+  #staff {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+#staff .minoBG {
+  background-image: url(../img/mino2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem 0 3rem 3rem;
+}
+#staff .minoBG .staffMino {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid #BF212A;
+  display: flex;
+  border-radius: 10%;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+@media (width < 320px) {
+  #staff .minoBG .staffMino {
+    flex-direction: column-reverse;
+  }
+}
+#staff .minoBG .staffMino p {
+  display: flex;
+  align-items: center;
+  color: #BF212A;
+  line-height: 1.5rem;
+  padding: 10px;
+  flex-basis: 100%;
+}
+#staff .minoBG .staffMino .minotau {
+  flex-basis: 120%;
+}
+#staff .minoBG .staffMino .minotau img {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+}
+#staff .fadein04 {
+  animation-name: fadein04;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein04 {
+  0% {
+    filter: blur(1000px);
+    transform: scale(1.5);
+  }
+  70% {
+    filter: blur(1000px);
+    transform: scale(1.5);
+  }
+  100% {
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+#staff .medousaBG {
+  background-image: url(../img/medousa2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem 3rem 3rem 0;
+}
+#staff .medousaBG .staffMedousa {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid #CD79F4;
+  display: flex;
+  border-radius: 10%;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+@media (width < 320px) {
+  #staff .medousaBG .staffMedousa {
+    flex-direction: column;
+  }
+}
+#staff .medousaBG .staffMedousa p {
+  display: flex;
+  align-items: center;
+  color: #CD79F4;
+  line-height: 1.5rem;
+  padding: 10px;
+  flex-basis: 100%;
+}
+#staff .medousaBG .staffMedousa .medousa {
+  flex-basis: 120%;
+}
+#staff .medousaBG .staffMedousa .medousa img {
+  max-width: 1000px;
+  width: 100%;
+  height: 100%;
+}
+#staff .fadein05 {
+  animation-name: fadein05;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein05 {
+  0% {
+    filter: blur(1000px);
+    transform: scale(1.02);
+  }
+  70% {
+    filter: blur(1000px);
+    transform: scale(1.02);
+  }
+  100% {
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+
+.contener {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+@media (width < 800px) {
+  .contener {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contener .twitter-timeline {
+  max-width: 600px;
+  border: 3px solid #BF212A;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+.contener .tiktok-embed {
+  margin: 0;
+  border: 3px solid #CD79F4;
+  border-radius: 15px;
+}
+
+#access {
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+#access iframe {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (width < 800px) {
+  #access iframe {
+    height: 300px;
+  }
+}
+@media (width < 320px) {
+  #access iframe {
+    height: 150px;
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+@media (width < 320px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer .footerLogoEnburem {
+  width: 33.3333333333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (width < 320px) {
+  footer .footerLogoEnburem {
+    width: 100%;
+  }
+}
+footer .footerLogoEnburem .footerEnburem {
+  width: 80%;
+}
+@media (width < 320px) {
+  footer .footerLogoEnburem .footerEnburem {
+    width: 60%;
+  }
+}
+@media (width < 320px) {
+  footer .footerLogoEnburem .footerLogo {
+    width: 300px;
+    max-width: 100%;
+  }
+}
+footer .SNS {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+  gap: 10px;
+}
+@media (width < 800px) {
+  footer .SNS {
+    margin: 10px;
+  }
+}
+@media (width < 320px) {
+  footer .SNS {
+    flex-direction: row;
+    width: 320px;
+    max-width: 100%;
+  }
+}
+footer .SNS img {
+  width: 100px;
+}
+footer .are {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2rem;
+}
+@media (width < 800px) {
+  footer .are {
+    line-height: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
