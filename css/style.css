@@ -538,7 +538,7 @@ th {
   opacity: 0.3;
 }
 
-@media (width <= 800px) { /* メディアクエリの値はお好みで */
+@media (max-width: 800px) { /* メディアクエリの値はお好みで */
   .toggleButton {
     position: fixed;
     top: 10px;
@@ -550,7 +550,7 @@ th {
     border-radius: 5px;
     z-index: 10001;
   }
-  .toggleButton::after {
+  ß .toggleButton::after {
     content: "MENU";
     position: absolute;
     bottom: -1rem;
@@ -696,12 +696,12 @@ header .headerback .headerback_logo {
   flex-direction: column;
   align-items: center;
 }
-@media (width < 500px) {
+@media (max-width: 500px) {
   header .headerback .headerback_logo {
     width: 80%;
   }
 }
-header .headerback .headerback_logo .headerLogo {
+header .headerback .headerLogo {
   animation: logo 10s infinite alternate ease-in-out;
 }
 @keyframes logo {
@@ -720,14 +720,14 @@ header .headerback .headerback_logo .headerLogo {
   display: flex;
   justify-content: center;
 }
-@media (width < 800px) {
+@media (max-width: 800px) {
   #top img {
     content: url(../img/bghead2.jpg);
     width: 100%;
     max-height: 844px;
   }
 }
-@media (width < 320px) {
+@media (max-width: 320px) {
   #top img {
     content: url(../img/bghead3.jpg);
     width: 100%;
@@ -764,7 +764,7 @@ header .headerback .headerback_logo .headerLogo {
   margin: 1rem auto;
   gap: 1rem;
 }
-@media (width < 800px) {
+@media (max-width: 800px) {
   .sec01 {
     max-width: 100%;
     flex-direction: column;
@@ -772,7 +772,7 @@ header .headerback .headerback_logo .headerLogo {
     padding: 1rem;
   }
 }
-@media (width < 600px) {
+@media (max-width: 600px) {
   .sec01 {
     background-image: none;
     padding: 0;
@@ -782,7 +782,7 @@ header .headerback .headerback_logo .headerLogo {
 .sec01 .sec01ono {
   width: 500px;
 }
-@media (width < 800px) {
+@media (max-width: 800px) {
   .sec01 .sec01ono {
     max-width: 400px;
     width: 100%;
@@ -802,13 +802,13 @@ header .headerback .headerback_logo .headerLogo {
   letter-spacing: 1px;
   line-height: 1.5rem;
 }
-@media (width < 800px) {
+@media (max-width: 800px) {
   .sec01 .sec01p {
     width: 100%;
     padding: 10px;
   }
 }
-@media (width < 320px) {
+@media (max-width: 320px) {
   .sec01 .sec01p {
     padding: 3px;
   }
@@ -932,7 +932,7 @@ header .headerback .headerback_logo .headerLogo {
   width: 100%;
   margin: 0 auto;
 }
-@media (width < 800px) {
+@media (max-width: 800px) {
   #staff {
     flex-direction: column;
     align-items: center;
@@ -953,7 +953,7 @@ header .headerback .headerback_logo .headerLogo {
   overflow: hidden;
   box-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
-@media (width < 320px) {
+@media (max-width: 320px) {
   #staff .minoBG .staffMino {
     flex-direction: column-reverse;
   }
@@ -1008,7 +1008,7 @@ header .headerback .headerback_logo .headerLogo {
   height: 100%;
   box-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
-@media (width < 320px) {
+@media (max-width: 832px) {
   #staff .medousaBG .staffMedousa {
     flex-direction: column;
   }
@@ -1055,7 +1055,7 @@ header .headerback .headerback_logo .headerLogo {
   margin: 1rem auto;
   gap: 1rem;
 }
-@media (width < 800px) {
+@media (max-width: 800px) {
   .contener {
     flex-direction: column;
     align-items: center;
@@ -1085,12 +1085,12 @@ header .headerback .headerback_logo .headerLogo {
   width: 100%;
   margin: 0 auto;
 }
-@media (width < 800px) {
+@media (max-width: 800px) {
   #access iframe {
     height: 300px;
   }
 }
-@media (width < 320px) {
+@media (max-width: 320px) {
   #access iframe {
     height: 150px;
   }
@@ -1102,7 +1102,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media (width < 320px) {
+@media (max-width: 320px) {
   footer {
     flex-direction: column;
     align-items: center;
@@ -1115,7 +1115,7 @@ footer .footerLogoEnburem {
   align-items: center;
   justify-content: center;
 }
-@media (width < 320px) {
+@media (max-width: 320px) {
   footer .footerLogoEnburem {
     width: 100%;
   }
@@ -1142,12 +1142,12 @@ footer .SNS {
   margin: 2rem;
   gap: 10px;
 }
-@media (width < 800px) {
+@media (max-width: 320px) {
   footer .SNS {
     margin: 10px;
   }
 }
-@media (width < 320px) {
+@media (max-width: 320px) {
   footer .SNS {
     flex-direction: row;
     width: 320px;
@@ -1164,7 +1164,7 @@ footer .are {
   justify-content: center;
   line-height: 2rem;
 }
-@media (width < 800px) {
+@media (max-width: 320px) {
   footer .are {
     line-height: 20px;
   }
