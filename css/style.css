@@ -1008,7 +1008,7 @@ header .headerback .headerLogo {
   height: 100%;
   box-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
-@media (max-width: 832px) {
+@media (max-width: 320px) {
   #staff .medousaBG .staffMedousa {
     flex-direction: column;
   }
